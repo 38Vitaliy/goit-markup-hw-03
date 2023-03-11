@@ -107,12 +107,29 @@ body {
 }
 /*------------- /Section 1 ---------*/
 /*------------- Section 2 ---------*/
+.hero-feature {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.visually-hidden {
+}
+.feature {
+  display: flex;
+  column-gap: 24px;
+}
+.feature-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.feature-description {
+}
+
 .feature-list {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 .feature-description {
   font-size: 16px;
@@ -129,11 +146,25 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-text-color);
+  margin-bottom: 72px;
+}
+.img-team {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: calc((100%-2 * 24px) / 3);
 }
 /*--------/section 3 -----*/
 /*-----------Section 4 ------*/
+
+.section-team {
+}
+.list-item-imag {
+  flex-basis: calc((100%-38 * 24px) / 4);
+}
+
 .section-team {
   background: var(--box-text-color);
+  padding: 120px 0px;
 }
 .img-team {
   background: var(--primary-white-color);
@@ -188,15 +219,29 @@ body {
 .button {
   font-family: inherit;
 }
-
+.cotainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
 .primary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
   background: var(--accent-color);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  min-height: 48px;
 }
 .secondary {
   font-weight: 500;
@@ -213,17 +258,28 @@ body {
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
-
+.function {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.function-item {
+  flex-basis: calc((100%-24px * 6) / 9);
+}
 .function-list {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
+  padding: 0px 16px;
 }
 .function-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--feature-color);
+  padding: 0px 16px;
 }
